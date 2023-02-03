@@ -1,0 +1,8 @@
+name: Demo Workflow
+on: workflow_dispatch # запуск в ручном режиме
+jobs: # задача 
+  print: 
+    runs-on: ubuntu-latest # на какой машине запускать данный workflow
+    steps: # шаги
+      - name: Print to console # название шага
+        run: echo Hello GH Actions! # что делает
