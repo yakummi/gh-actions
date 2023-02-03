@@ -6,3 +6,7 @@ jobs: # задача
     steps: # шаги
       - name: Print to console # название шага
         run: echo Hello GH Actions! # что делает
+      - name: Print a few lines
+        run: |
+          echo First line!
+          echo Second line!
